@@ -1,79 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="8MPQSYhHExAnHNwuISG6tOdF_DdOZSrGz-r5X6tzOmI" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smart School Helpdesk 2026 | IT Exhibition Project</title>
+<meta name="google-site-verification" content="8MPQSYhHExAnHNwuISG6tOdF_DdOZSrGz-r5X6tzOmI" />
+<title>Smart School Helpdesk 2026 | Student Support Portal</title>
 <style>
-:root{--navy:#102d5b;--blue:#2563eb;--cyan:#06b6d4;--bg:#f3f7fc;--ink:#152746;--muted:#5d6d85;--white:#fff;--green:#166534;--line:#dbe5f1}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
-header{background:radial-gradient(circle at 85% 15%,#2d75d9 0,transparent 28%),linear-gradient(130deg,#102d5b,#174a91 68%,#087eaa);color:white;padding:38px 18px 32px}
-.hero{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.5fr .8fr;gap:24px;align-items:center}
-.eyebrow{letter-spacing:.13em;text-transform:uppercase;font-size:.78rem;font-weight:bold;color:#a5f3fc}
-header h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.12;margin:10px 0}
-header p{color:#e0f2fe;max-width:650px}
-.hero-card{border:1px solid #ffffff45;background:#ffffff12;backdrop-filter:blur(8px);border-radius:20px;padding:22px}
-.hero-card .big{font-size:3rem}
-.hero-card strong{display:block;font-size:1.2rem}
-.hero-card small{color:#dbeafe}
-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;background:#fff;padding:10px;box-shadow:0 3px 12px #0f172a12;position:sticky;top:0;z-index:5}
-nav a{color:var(--navy);font-weight:bold;text-decoration:none;padding:9px 12px;border-radius:9px;font-size:.93rem}
-nav a:hover{background:#e0edff}
-main{max-width:1100px;margin:26px auto;padding:0 16px}
-.section{margin-bottom:24px}
-.panel,.card{background:#fff;border:1px solid #e6edf5;border-radius:18px;padding:23px;box-shadow:0 8px 24px #142d4b09}
-.section-heading{display:flex;align-items:flex-start;gap:12px;margin-bottom:16px}
-.section-icon{width:44px;height:44px;flex:0 0 44px;border-radius:13px;background:#e0edff;display:grid;place-items:center;font-size:1.4rem}
-h2{margin:0 0 5px;font-size:1.5rem}h3{margin:8px 0}
-.muted{color:var(--muted)}.small{font-size:.9rem}
-.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-.badge{display:inline-block;background:#e0f2fe;color:#075985;padding:5px 10px;border-radius:99px;font-size:.82rem;font-weight:bold}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 24px}
-.stat{background:white;border:1px solid var(--line);border-radius:15px;padding:16px}
-.stat strong{display:block;font-size:1.55rem;color:#1d4ed8}
-.stat span{font-size:.87rem;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.card{box-shadow:0 6px 18px #142d4b08}
-.card .emoji{font-size:2rem}.card p{color:#50617b}
-.card a{color:#1d4ed8;font-weight:bold}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.step{border:1px solid var(--line);background:#f8fbff;border-radius:13px;padding:15px}
-.step b{display:block;margin-bottom:5px}
-label{display:block;font-weight:bold;margin:13px 0 5px}
-input,select,textarea{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:9px;font:inherit;background:#fff;color:var(--ink)}
-input:focus,select:focus,textarea:focus{outline:3px solid #bfdbfe;border-color:#2563eb}
-button{background:#174a91;color:#fff;border:0;padding:12px 17px;border-radius:10px;font:inherit;font-weight:bold;cursor:pointer;margin:8px 7px 0 0}
-button:hover{background:#2563eb}button:focus{outline:3px solid #93c5fd;outline-offset:2px}
-.secondary{background:#e8eef7;color:#17345f}.secondary:hover{background:#d7e4f5}
-.danger{background:#fff1f2;color:#9f1239}.danger:hover{background:#ffe4e6}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}.full{grid-column:1/-1}
-#requestResult{margin-top:18px}.success{background:#dcfce7;color:#166534;border:1px solid #86efac;padding:16px;border-radius:12px;overflow-wrap:anywhere}
-.ticket-list{display:grid;gap:12px;margin-top:14px}
-.ticket-item{border:1px solid #cbd5e1;border-radius:12px;padding:15px;background:#f8fafc;overflow-wrap:anywhere}
-.ticket-item p{margin:5px 0}.ticket-top{display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap}
-.flow{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:15px}
-.flow span{background:#e0edff;color:#123b76;padding:10px 13px;border-radius:9px;font-weight:bold}
-.flow i{font-style:normal;color:#64748b;font-weight:bold}
-.note{border-left:4px solid #0ea5e9;background:#f0f9ff;padding:14px 16px;border-radius:0 10px 10px 0}
-footer{margin-top:32px;background:#102d5b;color:#e2e8f0;text-align:center;padding:25px}
-footer p{margin:4px}
-@media(max-width:780px){.hero{grid-template-columns:1fr}.hero-card{display:none}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.stats{gap:8px}.stat{padding:12px}}
-@media(max-width:540px){.grid,.form-grid,.stats{grid-template-columns:1fr}.full{grid-column:auto}nav{position:static}header{padding-top:28px}.panel,.card{padding:18px}}
-@media print{nav,button,form{display:none!important}body{background:#fff}.panel,.card,.stat{box-shadow:none;break-inside:avoid}header{background:#123b76!important;print-color-adjust:exact}}
+:root{--navy:#10264b;--blue:#2563eb;--cyan:#38bdf8;--ink:#18263f;--muted:#64748b;--bg:#f4f7fb;--line:#e1e8f2;--white:#fff;--green:#15803d;--shadow:0 14px 38px rgba(20,42,77,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}a{transition:all .2s ease}
+header{position:relative;overflow:hidden;background:linear-gradient(125deg,#0b1d3a 0%,#123e78 58%,#087eaa 100%);color:white;padding:58px 22px 52px}header:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(circle at 1px 1px,#ffffff 1.4px,transparent 0);background-size:22px 22px;mask-image:linear-gradient(90deg,transparent,black 70%)}header:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff22;border-radius:50%;right:-100px;top:-190px;box-shadow:0 0 0 48px #ffffff08,0 0 0 96px #ffffff06;pointer-events:none}.hero{position:relative;z-index:1;max-width:1120px;margin:auto;display:grid;grid-template-columns:1.35fr .75fr;gap:36px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#b8f1ff;background:#ffffff12;border:1px solid #ffffff25;border-radius:99px;padding:6px 12px;letter-spacing:.08em;text-transform:uppercase;font-size:.75rem;font-weight:800}header h1{font-size:clamp(2.5rem,5vw,4.1rem);line-height:1.04;letter-spacing:-.045em;margin:18px 0 16px}header p{color:#e1efff;max-width:660px;font-size:1.08rem;margin:0}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.hero-actions a{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:12px;padding:12px 17px;font-weight:800}.hero-actions .primary{background:#fff;color:#153c73}.hero-actions .outline{color:white;border:1px solid #ffffff65;background:#ffffff0b}.hero-card{border:1px solid #ffffff35;background:linear-gradient(145deg,#ffffff1c,#ffffff08);backdrop-filter:blur(10px);border-radius:24px;padding:28px;box-shadow:0 22px 60px #07172d33}.hero-card .big{font-size:3.4rem;line-height:1.2;margin-bottom:15px}.hero-card strong{display:block;font-size:1.3rem;line-height:1.3}.hero-card p{font-size:.94rem;margin-top:10px;color:#dbeafe}.hero-points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}.hero-points span{font-size:.83rem;color:#eff6ff;background:#ffffff12;border-radius:10px;padding:9px 10px}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;background:#ffffffed;border-bottom:1px solid var(--line);padding:12px 14px;position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}nav a{color:#334764;font-weight:750;text-decoration:none;padding:9px 14px;border-radius:10px;font-size:.91rem}nav a:hover{background:#e8f1ff;color:#174a91}main{max-width:1120px;margin:30px auto;padding:0 18px}.section{margin-bottom:25px}.panel,.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:var(--shadow)}.section-heading{display:flex;align-items:flex-start;gap:14px;margin-bottom:19px}.section-icon{width:48px;height:48px;flex:0 0 48px;border-radius:15px;background:linear-gradient(135deg,#e7f0ff,#e7fbff);display:grid;place-items:center;font-size:1.45rem}h2{margin:0 0 4px;font-size:1.55rem;letter-spacing:-.025em}h3{margin:8px 0;font-size:1.12rem;letter-spacing:-.01em}.muted{color:var(--muted)}.small{font-size:.9rem}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:23px 0 12px}.stat{background:linear-gradient(145deg,#f8fbff,#f1f7ff);border:1px solid #e0eaf7;border-radius:15px;padding:17px}.stat strong{display:block;font-size:1.08rem;color:#1d4ed8}.stat span{font-size:.87rem;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.card{box-shadow:0 8px 22px #142d4b07;transition:transform .2s ease,box-shadow .2s ease}.card:hover{transform:translateY(-3px);box-shadow:0 16px 30px #142d4b12}.card .emoji{font-size:2.1rem}.card p{color:#566780;margin-top:5px}.card a{color:#1d4ed8;font-weight:800;text-decoration:none}.card a:hover{text-decoration:underline}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.step{border:1px solid var(--line);background:#f8fbff;border-radius:13px;padding:15px}.step b{display:block;margin-bottom:5px}
+label{display:block;font-weight:750;margin:12px 0 6px;font-size:.93rem}input,select,textarea{width:100%;border:1px solid #cbd7e6;border-radius:11px;padding:12px 13px;font:inherit;color:var(--ink);background:#fff}input:focus,select:focus,textarea:focus{outline:3px solid #bfdbfe;border-color:#2563eb}button{background:linear-gradient(135deg,#1d4ed8,#1763bc);color:#fff;border:0;padding:12px 17px;border-radius:11px;font:inherit;font-weight:800;cursor:pointer;margin:8px 7px 0 0;box-shadow:0 5px 12px #1d4ed81c}button:hover{filter:brightness(1.05);transform:translateY(-1px)}button:focus{outline:3px solid #93c5fd;outline-offset:2px}.secondary{background:#eaf0f8;color:#17345f;box-shadow:none}.secondary:hover{background:#dbe8f7}.danger{background:#fff1f2;color:#9f1239;box-shadow:none}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}.full{grid-column:1/-1}#requestResult{margin-top:18px}.success{background:#effcf3;color:#166534;border:1px solid #a7e8ba;padding:17px;border-radius:14px;overflow-wrap:anywhere}.ticket-list{display:grid;gap:12px;margin-top:14px}.ticket-item{border:1px solid #dce5ef;border-radius:14px;padding:16px;background:#f9fbfe;overflow-wrap:anywhere}.ticket-item p{margin:5px 0}.ticket-top{display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap}.badge{display:inline-block;background:#e0f2fe;color:#075985;padding:5px 10px;border-radius:99px;font-size:.8rem;font-weight:800}.flow{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px}.flow span{background:#eaf2ff;color:#123b76;padding:10px 13px;border-radius:10px;font-weight:800}.flow i{font-style:normal;color:#64748b;font-weight:bold}.note{border-left:4px solid #0ea5e9;background:#f0f9ff;padding:14px 16px;border-radius:0 12px 12px 0}footer{margin-top:34px;background:#0b1d3a;color:#dce8f8;text-align:center;padding:28px 18px}footer p{margin:4px}footer p:first-child{font-size:1.08rem;color:#fff}
+@media(max-width:780px){header{padding:42px 18px}.hero{grid-template-columns:1fr;gap:24px}.hero-card{padding:22px}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr}.stats{gap:9px}.stat{padding:13px}nav{position:static}}@media(max-width:540px){.grid,.form-grid,.stats{grid-template-columns:1fr}.full{grid-column:auto}header h1{font-size:2.55rem}.panel,.card{padding:18px}main{padding:0 12px;margin-top:18px}.hero-points{grid-template-columns:1fr 1fr}.section-heading{gap:10px}.section-icon{width:42px;height:42px;flex-basis:42px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}@media print{nav,button,form,.hero-actions{display:none!important}body{background:#fff}.panel,.card,.stat{box-shadow:none;break-inside:avoid}header{background:#123b76!important;print-color-adjust:exact}}
 </style>
 </head>
 <body>
 <header>
   <div class="hero">
     <div>
-      <div class="eyebrow">Information Technology • Skill Competition 2026</div>
+      <div class="eyebrow">Student Support • School Services</div>
       <h1>Smart School<br>Helpdesk 2026</h1>
-      <p>A simple digital assistance platform concept to organise school information, guide students through common IT issues, and record sample help requests.</p>
-      <div class="badges"><span class="badge">Student Project</span><span class="badge">Offline Demo</span><span class="badge">HTML • CSS • JavaScript</span></div>
+      <p>Your central place to explore school support information, get guidance for common IT issues, and create a help request ticket.</p>
+      <div class="hero-actions"><a class="primary" href="#contact">Create a Help Request →</a><a class="outline" href="#features">Explore Services</a></div>
     </div>
-    <div class="hero-card"><div class="big">🏫💻</div><strong>One place for student support</strong><small>D CM SOE Chatra · School-level exhibition demo</small></div>
+    <div class="hero-card"><div class="big">🏫💻</div><strong>Support made simple.</strong><p>Find helpful guidance, explore student services, and keep track of your help request.</p><div class="hero-points"><span>✓ IT guidance</span><span>✓ Ticket preview</span><span>✓ Student-friendly</span><span>✓ Mobile-ready</span></div></div>
   </div>
 </header>
 <nav aria-label="Main navigation">
@@ -81,22 +31,22 @@ footer p{margin:4px}
 </nav>
 <main id="home">
   <section class="panel section">
-    <div class="section-heading"><div class="section-icon">👋</div><div><h2>Welcome to the Helpdesk</h2><p class="muted" style="margin:0">A student-friendly digital support concept for school use.</p></div></div>
-    <p>This prototype demonstrates how a school could bring general notices, basic computer troubleshooting guidance, and student help requests together in one simple website.</p>
+    <div class="section-heading"><div class="section-icon">👋</div><div><h2>How can we help you today?</h2><p class="muted" style="margin:0">Explore support options designed around common student needs.</p></div></div>
+    <p>Smart School Helpdesk brings common IT guidance and a simple request-ticket experience together in one easy-to-use portal.</p>
     <div class="stats">
-      <div class="stat"><strong>03</strong><span>Core service areas</span></div>
-      <div class="stat"><strong>24/7*</strong><span>Website can open locally</span></div>
-      <div class="stat"><strong>₹0</strong><span>Software cost for this demo</span></div>
+      <div class="stat"><strong>IT Support</strong><span>Simple troubleshooting guidance</span></div>
+      <div class="stat"><strong>Help Tickets</strong><span>Generate a reference number</span></div>
+      <div class="stat"><strong>Easy Access</strong><span>Designed for desktop and mobile</span></div>
     </div>
-    <p class="small muted">*The saved HTML file can be opened any time on the same computer. Real school updates and online support require additional setup.</p>
+    <p class="small muted">Use the guidance here as a first step. For official school information or equipment issues, please confirm with a teacher or school staff member.</p>
   </section>
 
   <section class="section" id="features">
-    <div class="section-heading"><div class="section-icon">✨</div><div><h2>Key Features</h2><p class="muted" style="margin:0">Explore the main sections of this prototype.</p></div></div>
+    <div class="section-heading"><div class="section-icon">✨</div><div><h2>Key Features</h2><p class="muted" style="margin:0">Choose a service to get started.</p></div></div>
     <div class="grid">
-      <article class="card"><div class="emoji">📢</div><h3>School Information</h3><p>A central place for school notices and reminders. Official announcements should be verified with a teacher.</p><a href="#project">Project details ↓</a></article>
+      <article class="card"><div class="emoji">📢</div><h3>School Information</h3><p>Find school-related information and reminders. Confirm official announcements with your teacher.</p><a href="#project">Project details ↓</a></article>
       <article class="card"><div class="emoji">🧰</div><h3>IT Help Center</h3><p>Simple first checks for common computer lab problems, explained in student-friendly language.</p><a href="#it-help">Explore IT tips ↓</a></article>
-      <article class="card"><div class="emoji">🎫</div><h3>Help Request Tickets</h3><p>Submit a sample request, receive a ticket number, and view the request in the demo list.</p><a href="#contact">Try live demo ↓</a></article>
+      <article class="card"><div class="emoji">🎫</div><h3>Help Request Tickets</h3><p>Create your own support request, receive a ticket number, and review it in the request list on this device.</p><a href="#contact">Try live demo ↓</a></article>
     </div>
   </section>
 
@@ -110,42 +60,42 @@ footer p{margin:4px}
   </section>
 
   <section class="panel section" id="contact">
-    <div class="section-heading"><div class="section-icon">📝</div><div><h2>Live Student Help Request Demo</h2><p class="muted" style="margin:0">Fill the sample form and submit to see a ticket instantly.</p></div></div>
-    <div class="note small"><strong>Exhibition tip:</strong> Click “Fill Demo Example” first, then click “Submit Help Request” to show the live feature to judges.</div>
+    <div class="section-heading"><div class="section-icon">📝</div><div><h2>Create a Help Request</h2><p class="muted" style="margin:0">Enter your own details to generate a ticket reference.</p></div></div>
+    <div class="note small"><strong>Before you submit:</strong> Your request is saved in this browser only. It does not send a request to school staff yet.</div>
     <form id="helpForm">
       <div class="form-grid">
-        <div><label for="studentName">Student Name</label><input id="studentName" name="studentName" placeholder="e.g. Demo Student" maxlength="60" required></div>
-        <div><label for="className">Class</label><select id="className" name="className" required><option value="">Choose class</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option></select></div>
+        <div><label for="studentName">Student Name</label><input id="studentName" name="studentName" placeholder="Enter your full name" maxlength="60" required></div>
+        <div><label for="className">Class</label><select id="className" name="className" required><option value="">Choose class</option><option>KG</option><option>UKG</option><option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option><option>Class 5</option><option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option></select></div>
         <div class="full"><label for="problem">Select Problem</label><select id="problem" name="problem" required><option value="">Choose a problem</option><option>Internet not working</option><option>Keyboard or mouse issue</option><option>Computer running slowly</option><option>Software or application issue</option><option>Other problem</option></select></div>
         <div class="full"><label for="details">Problem Details</label><textarea id="details" name="details" rows="3" placeholder="Describe the issue briefly" maxlength="500" required></textarea></div>
       </div>
-      <button type="submit">Submit Help Request</button><button type="button" class="secondary" id="fillDemo">Fill Demo Example</button><button type="reset" class="secondary">Clear Form</button>
+      <button type="submit">Create Ticket</button><button type="reset" class="secondary">Clear Form</button>
     </form>
     <div id="requestResult" aria-live="polite"></div>
   </section>
 
   <section class="panel section" id="requests">
-    <div class="section-heading"><div class="section-icon">📋</div><div><h2>Submitted Demo Requests</h2><p class="muted" style="margin:0">Requests saved in this browser on this device.</p></div></div>
+    <div class="section-heading"><div class="section-icon">📋</div><div><h2>Request History</h2><p class="muted" style="margin:0">Your submitted requests saved in this browser on this device.</p></div></div>
     <div id="requestList" class="ticket-list"><p class="muted">No requests submitted yet.</p></div>
-    <button type="button" class="secondary" id="clearRequests">Clear Demo Requests</button>
+    <button type="button" class="secondary" id="clearRequests">Clear Request History</button>
   </section>
 
   <section class="panel section" id="project">
-    <div class="section-heading"><div class="section-icon">🎓</div><div><h2>About This Project</h2><p class="muted" style="margin:0">Prepared for Skill Competition-cum-Exhibition 2026.</p></div></div>
+    <div class="section-heading"><div class="section-icon">🎓</div><div><h2>About This Project</h2><p class="muted" style="margin:0">Project overview and service information.</p></div></div>
     <p><strong>Project title:</strong> Smart School Helpdesk 2026</p>
     <p><strong>Trade:</strong> Information Technology</p>
     <p><strong>School:</strong> D CM SOE Chatra</p>
     <p><strong>Problem:</strong> Students may have to look in different places for school information and basic IT help.</p>
-    <p><strong>Proposed solution:</strong> A simple website concept that groups student information, troubleshooting tips, and a sample help request feature.</p>
-    <p><strong>Technology used:</strong> HTML structures the page, CSS styles the interface, and JavaScript makes the form interactive.</p>
+    <p><strong>Solution:</strong> A student-friendly portal that brings IT troubleshooting guidance and a ticket-based help request experience together.</p>
+    
     <div class="flow"><span>Student has a problem</span><i>→</i><span>Submit request</span><i>→</i><span>Ticket shown</span></div>
     <h3>Future Improvements</h3>
     <ul><li>Teacher/admin login and verified notices.</li><li>Secure online database and teacher notifications.</li><li>Hindi and English language options.</li><li>Mobile-friendly access for students.</li></ul>
-    <div class="note small"><strong>Honest project note:</strong> This is a working local prototype. It does not send requests to teachers or a school server. The demo request list is stored in the browser on this device.</div>
+    <div class="note small"><strong>Service note:</strong> Help tickets currently work as an on-device sample. They are saved in this browser and are not sent to teachers or a school server.</div>
     <button type="button" onclick="window.print()">Print Project Summary</button>
   </section>
 </main>
-<footer><p><strong>Smart School Helpdesk 2026</strong></p><p>D CM SOE Chatra · Information Technology Student Project</p><p>School-level Skill Competition-cum-Exhibition</p></footer>
+<footer><p><strong>Smart School Helpdesk 2026</strong></p><p>Student Support Portal · D CM SOE Chatra</p><p>Helpful guidance. Clear next steps. Simple support.</p></footer>
 <script>
 const form=document.getElementById('helpForm'),result=document.getElementById('requestResult'),list=document.getElementById('requestList');
 const storageKey='smartSchoolHelpdeskDemoRequests2026';
@@ -157,7 +107,7 @@ function renderRequests(){
   const card=document.createElement('article');card.className='ticket-item';
   const top=document.createElement('div');top.className='ticket-top';
   const title=document.createElement('strong');title.textContent=r.ticket+' — '+r.problem;
-  const badge=document.createElement('span');badge.className='badge';badge.textContent='Demo ticket';
+  const badge=document.createElement('span');badge.className='badge';badge.textContent='Help request';
   top.append(title,badge);
   const p1=document.createElement('p');p1.textContent='Student: '+r.name+' | '+r.className;
   const p2=document.createElement('p');p2.textContent='Details: '+r.details;
@@ -165,13 +115,6 @@ function renderRequests(){
   card.append(top,p1,p2,p3);list.appendChild(card)
  })
 }
-document.getElementById('fillDemo').addEventListener('click',()=>{
- document.getElementById('studentName').value='Demo Student';
- document.getElementById('className').value='Class 10';
- document.getElementById('problem').value='Internet not working';
- document.getElementById('details').value='Computer lab internet is not connecting.';
- document.getElementById('studentName').focus()
-});
 form.addEventListener('submit',event=>{
  event.preventDefault();
  const name=document.getElementById('studentName').value.trim(),className=document.getElementById('className').value,problem=document.getElementById('problem').value,details=document.getElementById('details').value.trim();
@@ -186,11 +129,11 @@ form.addEventListener('submit',event=>{
  const p2=document.createElement('p');p2.textContent='Student: '+name+' ('+className+')';
  const p3=document.createElement('p');p3.textContent='Problem: '+problem;
  const p4=document.createElement('p');p4.textContent='Details: '+details;
- const p5=document.createElement('p');p5.textContent=saved?'This sample request is saved in this browser.':'The confirmation is shown, but browser storage is unavailable.';
+ const p5=document.createElement('p');p5.textContent=saved?'This request is saved in this browser only.':'The confirmation is shown, but browser storage is unavailable.';
  box.append(h,p1,p2,p3,p4,p5);result.appendChild(box);renderRequests();form.reset()
 });
 document.getElementById('clearRequests').addEventListener('click',()=>{
- if(confirm('Clear all demo requests saved in this browser?')){try{localStorage.removeItem(storageKey)}catch(e){}result.replaceChildren();renderRequests()}
+ if(confirm('Clear all help requests saved in this browser?')){try{localStorage.removeItem(storageKey)}catch(e){}result.replaceChildren();renderRequests()}
 });
 renderRequests();
 </script>
