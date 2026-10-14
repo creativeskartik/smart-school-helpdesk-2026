@@ -77,7 +77,8 @@ label{display:block;font-weight:750;margin:12px 0 6px;font-size:.93rem}input,sel
   <section class="panel section" id="requests">
     <div class="section-heading"><div class="section-icon">📋</div><div><h2>Request History</h2><p class="muted" style="margin:0">Your submitted requests saved in this browser on this device.</p></div></div>
     <div id="requestList" class="ticket-list"><p class="muted">No requests submitted yet.</p></div>
-    <button type="button" class="secondary" id="clearRequests">Clear Request History</button>
+    <button type="button" class="secondary" id="clearRequests">🔒 Owner: Clear Request History</button>
+    <p class="muted small">Owner PIN required to clear the saved request history.</p>
   </section>
 
   <section class="panel section" id="project">
@@ -99,6 +100,8 @@ label{display:block;font-weight:750;margin:12px 0 6px;font-size:.93rem}input,sel
 <script>
 const form=document.getElementById('helpForm'),result=document.getElementById('requestResult'),list=document.getElementById('requestList');
 const storageKey='smartSchoolHelpdeskDemoRequests2026';
+// BASIC FRONT-END PROTECTION ONLY: change this PIN before publishing.
+const OWNER_PIN='4826';
 function getRequests(){try{return JSON.parse(localStorage.getItem(storageKey)||'[]')}catch(e){return[]}}
 function renderRequests(){
  const requests=getRequests();list.replaceChildren();
@@ -133,7 +136,10 @@ form.addEventListener('submit',event=>{
  box.append(h,p1,p2,p3,p4,p5);result.appendChild(box);renderRequests();form.reset()
 });
 document.getElementById('clearRequests').addEventListener('click',()=>{
- if(confirm('Clear all help requests saved in this browser?')){try{localStorage.removeItem(storageKey)}catch(e){}result.replaceChildren();renderRequests()}
+ const enteredPin=prompt('Owner verification required. Enter the Owner PIN to clear Request History:');
+ if(enteredPin===null)return;
+ if(enteredPin!==OWNER_PIN){alert('Incorrect Owner PIN. Request History has not been deleted.');return}
+ if(confirm('Owner verified. Clear all help requests saved in this browser? This cannot be undone.')){try{localStorage.removeItem(storageKey)}catch(e){}result.replaceChildren();renderRequests();alert('Request History cleared successfully.')}
 });
 renderRequests();
 </script>
